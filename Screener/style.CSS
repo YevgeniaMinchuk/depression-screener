@@ -238,7 +238,7 @@ select{
 /* Small screen adjustment */ 
 @media only screen and (max-width: 900px) {
     .logo{
-        width: 8em;
+        width: 2em;
     }
     nav .fa-solid.fa-bars{
         display: block;
