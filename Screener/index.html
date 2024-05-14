@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Depression Screener </title>
+    <link rel="stylesheet" href="style.CSS">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/08840a3df3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <!-- Invisible title for screen reader -->
+            <title style="visibility: hidden;"> Depression Screener: PHQ-9 </title>
+            <ul id="sidemenu">
+                <li> <a href="#test"> Take Test </a> </li>
+                <li> <a href="#header"> Home </a> </li>
+                <li> <a href="resources.html"> Resources </a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<div class="square">
+    <div class="home">
+        <h1 style="font-weight: 800;"> DEPRESSION SCREENER FOR ADOLESCENTS </h1>
+        <div class="small-square">
+            <i class="fa-solid fa-vial"></i>
+            <h2 style="color: #252c31;"> <strong> What is the PHQ-9? </strong> </h2>
+            <p class="subtitle"> This is a 9-question tool that can help you explore whether the thoughts, feelings, or behaviors you have been experiencing could be <strong> depression</strong>. 
+                <br> <br> It can also help in determining the severity of your depression and response to treatment.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Test -->
+<form id="test">
+    <div class="container">
+        <div class="Q-content active" id="firstpage">
+            <div class="Q-content-icons">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="instr">
+                <h2> Over the last <span style="color: #1b2024;"> 2 weeks</span>, how often have you been <dfn title="Experienced concern over"> bothered</dfn> by any of the following issues? <br>
+                </h2>
+            </div>
+            <div class="QSheet">
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Feeling down, depressed, or hopeless?</h2>
+                    <br>
+                        <input type="radio" id="choice1" name="choice" value="0" checked="checked"> </input>
+                        <label for="choice1"> Not at all </label>
+                        <input type="radio" id="choice2" name="choice" value="1"> </input>
+                        <label for="choice2"> Several days </label>
+                        <input type="radio" id="choice3" name="choice" value="2"> </input>
+                        <label for="choice3"> More than half of the days </label>
+                        <input type="radio" id="choice4" name="choice" value="3"> </input>
+                        <label for="choice4"> Nearly every day </label> 
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Little interest or pleasure in doing things? </h2>
+                    <br>
+                        <input type="radio" id="choice5" name="choice2" value="0" checked="checked"> </input>
+                        <label for="choice5"> Not at all </label>
+                        <input type="radio" id="choice6" name="choice2" value="1">  </input>
+                        <label for="choice6"> Several days </label>
+                        <input type="radio" id="choice7" name="choice2" value="2"> </input>
+                        <label for="choice7"> More than half of the days </label>
+                        <input type="radio" id="choice8" name="choice2" value="3"> </input>
+                        <label for="choice8"> Nearly every day </label> 
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Trouble falling or staying asleep, or sleeping too much? </h2>
+                    <br>
+                        <input type="radio" id="choice9" name="choice3" value="0" checked="checked"> </input>
+                        <label for="choice9"> Not at all </label>
+                        <input type="radio" id="choice10" name="choice3" value="1">  </input>
+                        <label for="choice10"> Several days </label>
+                        <input type="radio" id="choice11" name="choice3" value="2"> </input>
+                        <label for="choice11"> More than half of the days </label>
+                        <input type="radio" id="choice12" name="choice3" value="3"> </input>
+                        <label for="choice12"> Nearly every day </label>
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Poor appetite, weight loss, or overeating? </h2>
+                    <br>
+                        <input type="radio" id="choice13" name="choice4" value="0" checked="checked"> </input>
+                        <label for="choice13"> Not at all </label>
+                        <input type="radio" id="choice14" name="choice4" value="1">  </input>
+                        <label for="choice14"> Several days </label>
+                        <input type="radio" id="choice15" name="choice4" value="2"> </input>
+                        <label for="choice15"> More than half of the days </label>
+                        <input type="radio" id="choice16" name="choice4" value="3"> </input>
+                        <label for="choice16"> Nearly every day </label>
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Feeling tired or having little energy? </h2>
+                    <br>
+                        <input type="radio" id="choice17" name="choice5" value="0" checked="checked"> </input>
+                        <label for="choice17"> Not at all </label>
+                        <input type="radio" id="choice18" name="choice5" value="1">  </input>
+                        <label for="choice18"> Several days </label>
+                        <input type="radio" id="choice19" name="choice5" value="2"> </input>
+                        <label for="choice19"> More than half of the days </label>
+                        <input type="radio" id="choice20" name="choice5" value="3"> </input>
+                        <label for="choice20"> Nearly every day </label>
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Feeling bad about yourself – or feeling that you are a
+                        failure, or that you have let yourself or your family
+                        down? </h2>
+                    <br>
+                        <input type="radio" id="choice21" name="choice6" value="0" checked="checked"> </input>
+                        <label for="choice21"> Not at all </label>
+                        <input type="radio" id="choice22" name="choice6" value="1">  </input>
+                        <label for="choice22"> Several days </label>
+                        <input type="radio" id="choice23" name="choice6" value="2"> </input>
+                        <label for="choice23"> More than half of the days </label>
+                        <input type="radio" id="choice24" name="choice6" value="3"> </input>
+                        <label for="choice24"> Nearly every day </label>
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Trouble concentrating on things like school work,
+                        reading, or watching TV? </h2>
+                    <br>
+                        <input type="radio" id="choice25" name="choice7" value="0" checked="checked"> </input>
+                        <label for="choice25"> Not at all </label>
+                        <input type="radio" id="choice26" name="choice7" value="1">  </input>
+                        <label for="choice26"> Several days </label>
+                        <input type="radio" id="choice27" name="choice7" value="2"> </input>
+                        <label for="choice27"> More than half of the days </label>
+                        <input type="radio" id="choice28" name="choice7" value="3"> </input>
+                        <label for="choice28"> Nearly every day </label>
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Moving or speaking so slowly that other people could
+                        have noticed? <br>
+                        Or the opposite – being so fidgety or restless that you
+                        were moving around a lot more than usual? </h2>
+                    <br>
+                        <input type="radio" id="choice29" name="choice8" value="0" checked="checked"> </input>
+                        <label for="choice29"> Not at all </label>
+                        <input type="radio" id="choice30" name="choice8" value="1">  </input>
+                        <label for="choice30"> Several days </label>
+                        <input type="radio" id="choice31" name="choice8" value="2"> </input>
+                        <label for="choice31"> More than half of the days </label>
+                        <input type="radio" id="choice32" name="choice8" value="3"> </input>
+                        <label for="choice32"> Nearly every day </label>
+                </div>
+                <div class="question">
+                    <h2> <hr color="#6c8cbf" size="1px"> <br> Thoughts that you would be better off dead, or of
+                        hurting yourself in some way? </h2>
+                    <br>
+                        <input type="radio" id="choice33" name="choice9" value="0" checked="checked"> </input>
+                        <label for="choice33"> Not at all </label>
+                        <input type="radio" id="choice34" name="choice9" value="1">  </input>
+                        <label for="choice34"> Several days </label>
+                        <input type="radio" id="choice35" name="choice9" value="2"> </input>
+                        <label for="choice35"> More than half of the days </label>
+                        <input type="radio" id="choice36" name="choice9" value="3"> </input>
+                        <label for="choice36"> Nearly every day </label>
+                </div>
+            </div>
+            <h5> <br> Total: <span id="totalCount"></span></h5>
+            <button type="button" class="btn" onclick="opentab(event)"> Next </button>      
+        </div>
+        <div class="severity">
+            <div class="Q-content" id="minimal">
+                <div class="Q-content-icons">
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <h1 class="result"> Minimal Depression </h1>
+                <h3 class="score"> Total: 0-4 </h3>
+                <p class="result_description"> Based on the self-reported fields, patient may have minimal depression.
+                    <br> Patient may not need depression treatment. </p>
+                <h5 class="disclaimer" style="text-align: center; color: #475d6e;"> <br> <br> If you have had thoughts that you would be better off dead or of hurting yourself in some way, please discuss
+                    this with your Health Care Clinician, go to a hospital emergency room or call 911. </h5>
+            </div>
+            <div class="Q-content" id="mild">  
+                <div class="Q-content-icons">
+                    <i class="fa-regular fa-face-meh"></i>
+                </div>      
+                <h1 class="result"> Mild Depression </h1>
+                <h3 class="score"> Total: 5-9 </h3>
+                <p class="result_description"> Based on the self-reported fields, you may have mild depression. 
+                    <br> Use clinical judgment about treatment, based on patient’s duration of symptoms and
+                    functional impairment. </p>
+                <h5 class="disclaimer" style="text-align: center; color: #475d6e;"> 
+                    <br> <br> If you have had thoughts that you would be better off dead or of hurting yourself in some way, please discuss
+                    this with your Health Care Clinician, go to a hospital emergency room or call 911. </h5>
+            </div>
+            <div class="Q-content" id="moderate">    
+                <div class="Q-content-icons">
+                    <i class="fa-regular fa-face-frown"></i>
+                </div>           
+                <h1 class="result"> Moderate Depression </h1>
+                <h3 class="score"> Total: 10-14 </h3>
+                <p class="result_description"> Based on the self-reported fields, you may have moderate depression. 
+                    <br> Use clinical judgment about treatment, based on patient’s duration of symptoms and
+                    functional impairment.
+                </p>
+                <h5 class="disclaimer" style="text-align: center; color: #475d6e;"> 
+                    <br> <br> If you have had thoughts that you would be better off dead or of hurting yourself in some way, please discuss
+                    this with your Health Care Clinician, go to a hospital emergency room or call 911. </h5>
+            </div>
+            <div class="Q-content" id="mod_severe">   
+                <div class="Q-content-icons">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>       
+                <h1 class="result"> Moderately Severe Depression </h1>
+                <h3 class="score"> Total: 15-19 </h3>
+                <p class="result_description"> Based on the self-reported fields, you may have moderately severe depression. 
+                    <br> Treat using antidepressants, psychotherapy or a combination of treatment.
+                </p>
+                <h4 class="disclaimer" style="text-align: center; color: #475d6e;"> 
+                    <br> <br> If you have had thoughts that you would be better off dead or of hurting yourself in some way, please discuss
+                    this with your Health Care Clinician, go to a hospital emergency room or call 911. </h4>
+            </div>
+            <div class="Q-content" id="severe">    
+                <div class="Q-content-icons" >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>       
+                <h1 class="result"> Severe Depression </h1>
+                <h3 class="score"> Total: 20-27 </h3>
+                <p class="result_description"> Based on the self-reported fields, you may have severe depression. 
+                    <br> Recommendation: Treat using antidepressants with or without psychotherapy. Please consult with a specialist.
+                </p>
+                <h4 class="disclaimer" style="text-align: center; color: #475d6e;"> 
+                    <br> <br> If you have had thoughts that you would be better off dead or of hurting yourself in some way, please discuss
+                    this with your Health Care Clinician, go to a hospital emergency room or call 911. </h4>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="note">
+    <h5 style="text-align: center; padding: 0 40px;"> Note: Since the questionnaire relies on patient self-report, all responses should be verified by the clinician,
+        and a definitive diagnosis is made on clinical grounds taking into account how well the patient understood
+        the questionnaire, as well as other relevant information from the patient.
+        Diagnoses of Major Depressive Disorder or Other Depressive Disorder also require impairment of social,
+        occupational, or other important areas of functioning (Question #10) and ruling out normal bereavement, a
+        history of a Manic Episode (Bipolar Disorder), and a physical disorder, medication, or other drug as the
+        biological cause of the depressive symptoms. </h5>
+</div>
+
+<div class="copyright">
+    <p> Copyright © Yevgenia Minchuk 2024 </p>
+</div>
+
+</body>
+
+</html>

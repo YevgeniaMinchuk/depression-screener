@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Depression Screener </title>
+    <link rel="stylesheet" href="style.CSS">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/08840a3df3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <!-- Invisible title for screen reader -->
+                <title style="visibility: hidden;"> Depression Screener </title>
+                <ul id="sidemenu">
+                    <li> <a href="index.html"> Take Test </a> </li>
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="resources.html"> Resources </a> </li>
+                    <li> <a href="contact.html"> Contact </a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="resources_bg">
+            <h1 class="resources_title"> CONTACT </h1>
+        </div>
+            <div class="contact">
+                <form name="submit-to-google-sheet">
+                    <h2 class="subtitle" style="text-align: center;"> Please write your message! </h2>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br> <br>
+    <div class="copyright">
+        <p> Copyright © Yevgenia Minchuk 2024 </p>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6G7LVsMHQ9QBXEvsMxudTX0xUwb4f7MojU-3Gc0FJw9JfAHR5Fv38IhSU-iJ8GV9ivQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+      
+</body>
+
+</html>
