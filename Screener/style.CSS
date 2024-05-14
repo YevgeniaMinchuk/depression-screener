@@ -214,9 +214,12 @@ select{
     width: 95%;
 }
 .copyright{
+    position: relative;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     font-size: 14px;
-    margin-top: 80px;
+    margin-top: 10em;
     padding: 10px;
     background-color: #49c27b;
     color: #fff;
