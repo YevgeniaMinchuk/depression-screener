@@ -24,15 +24,25 @@ Please visit the website at phq9-screener.netlify.app
 
 ## File Structure
 phq9-screener/
+
 │
+
 ├── images/
+
 │   └── logo.png
+
 ├── css/
+
 │   └── style.css
+
 ├── js/
+
 │   └── script.js
+
 ├── index.html
+
 ├── resources.html
+
 └── contact.html
 
 By using this PHQ-9 Screener, users can quickly assess their mental health and seek appropriate support based on the feedback provided. If you have any questions or need further assistance, please feel free to contact us through the contact page.
